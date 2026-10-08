@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>瞬云 (SunYun Cloud) - 高速稳定跨境网络连接服务指南与套餐对比</title>
+  <meta name="description" content="瞬云 (SunYun Cloud) 落地服务指南与全档位套餐对比。提供限时年付小包（¥99/年，59GB/月）及行者、纵横、凌霄月付套餐详细参数、Clash/ClashParty 新手客户端导入配置教程、节点延迟科普与选购指南。">
+  <meta name="keywords" content="瞬云, SunYun Cloud, 便宜机场, 安全机场, 机场推荐, 科学上网, 魔法梯子, 稳定节点, Clash节点, Clash机场, ClashParty机场, 翻墙出海, 全球加速">
+  <link rel="canonical" href="https://sunyuncloud.cfd/">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="瞬云 (SunYun Cloud) - 高速稳定跨境网络连接服务指南与套餐对比">
+  <meta property="og:description" content="瞬云官方落地服务指南与全档位套餐对比。提供限时年付小包及行者、纵横、凌霄月付套餐详细参数、Clash 新手导入教程与选购指南。">
+  <meta property="og:url" content="https://sunyuncloud.cfd/">
+  <meta property="og:site_name" content="瞬云 SunYun Cloud">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="瞬云 (SunYun Cloud) - 高速稳定跨境网络连接服务指南与套餐对比">
+  <meta name="twitter:description" content="瞬云官方落地服务指南与全档位套餐对比。提供限时年付小包及行者、纵横、凌霄月付套餐详细参数、Clash 新手导入教程与选购指南。">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JSON-LD 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "瞬云 SunYun Cloud",
+    "url": "https://sunyuncloud.cfd/",
+    "description": "瞬云 (SunYun Cloud) 跨境网络连接服务指南、套餐价格对比与 Clash 配置教程平台",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://sunyuncloud.cfd/#articles",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "瞬云 SunYun Cloud",
+    "url": "https://sunyuncloud.cfd/",
+    "logo": "https://sunyuncloud.cfd/assets/favicon.svg"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "瞬云提供哪些套餐？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "根据公开参考资料，瞬云主要提供四档套餐：限时年付小包（¥99/年，每月59GB）、行者（¥20/月，每月150GB）、纵横（¥36/月，每月300GB）以及凌霄（¥68/月，每月600GB）。具体价格与配置请以指定购买后台实际展示为准。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "新手应该怎样选择流量？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "初次使用建议根据日常习惯评估：仅用于日常查阅资料、文献检索和轻度网页浏览，每月50GB至100GB已足够；若经常观看1080P/4K超清视频或多设备协同，建议选择150GB至300GB的行者或纵横套餐；若为团队或海量下载，可考虑600GB的凌霄套餐。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "如何判断客户端是否兼容？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "瞬云提供标准通用订阅格式。只要您的客户端支持主流的 Clash、Clash Meta（Mihomo）、ClashParty、Shadowrocket（小火箭）或通用代理协议，即可直接导入使用。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Clash 订阅如何导入？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "在瞬云后台复制您的专属 Clash 订阅链接，打开客户端进入“配置（Profiles）”或“订阅（Subscriptions）”界面，粘贴链接并点击下载保存。拉取成功后在代理列表中选择节点并开启系统代理即可。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "节点无法连接怎么办？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "建议按以下顺序排查：1. 检查设备本地系统时间是否自动同步（时间偏差大会导致握手失败）；2. 检查套餐流量与有效期；3. 在客户端中右键强制更新订阅；4. 切换节点或更换代理模式为规则模式；5. 检查本地端口是否有其他软件冲突。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "购买前需要注意哪些事项？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "购买前请核对所需付款周期、月度流量额度与设备连接规则。虚拟网络服务通常遵循服务商特定条款，建议新手首次尝试优先选择低试错成本的月付套餐进行体验。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "月付与年付有什么区别？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "月付支持按月结算，灵活性高、适合初次体验；年付则需一次性结清全周期费用，但通常折合单价更具性价比。例如限时年付小包一次性支付¥99享有一年服务，每月按期提供59GB流量。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "如何查看最新套餐信息？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "由于运营方可能会对节点链路与促销政策进行调整，最权威准确的套餐资费、节点可用情况与优惠动态请直接登录指定注册后台用户中心查看。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" aria-label="瞬云首页">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM13 14h-2V9h2v5zm0 4h-2v-2h2v2z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">瞬云</span>
+          <span class="brand-sub">SunYun Cloud</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="/" class="nav-link active">首页</a>
+        <a href="/plans.html" class="nav-link">套餐价格</a>
+        <a href="#tutorials" class="nav-link">客户端教程</a>
+        <a href="#articles" class="nav-link">精选文章</a>
+        <a href="#faq" class="nav-link">常见问题</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-sm" target="_blank" rel="sponsored nofollow noopener">注册 / 登录</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="展开导航菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="/" class="nav-link">首页</a>
+      <a href="/plans.html" class="nav-link">套餐价格</a>
+      <a href="#tutorials" class="nav-link">客户端教程</a>
+      <a href="#articles" class="nav-link">精选文章</a>
+      <a href="#faq" class="nav-link">常见问题</a>
+      <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-block" target="_blank" rel="sponsored nofollow noopener">进入注册 / 登录</a>
+    </div>
+  </header>
+
+  <!-- 主体内容 -->
+  <main>
+    <!-- Hero 区域 -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>新一代全球网络连接加速与新手指南</span>
+          </div>
+          <h1 class="hero-title">
+            高速、稳定、简单的<br>
+            <span class="text-gradient">瞬云跨境网络连接服务指南</span>
+          </h1>
+          <p class="hero-subtitle">
+            专为 Clash 用户与新手初学者打造。提供透明公开的套餐价格对比、全平台客户端导入图文指南、稳定节点网络科普与真实选购建议，助您轻松畅连全球互联网。
+          </p>
+          <div class="hero-actions">
+            <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-lg" target="_blank" rel="sponsored nofollow noopener">
+              <span>立即注册 / 查看套餐</span>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="/plans.html" class="btn btn-outline btn-lg">浏览套餐价格表</a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>全球优质节点网络覆盖</span>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>流媒体与主流 AI 访问优化</span>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Clash / ClashParty 全端兼容</span>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>公开资费对比，无隐形虚标</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero 右侧拟态控制台 -->
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hero-card-title">
+              <span class="status-indicator"></span>
+              <span>瞬云核心节点状态监控预览</span>
+            </div>
+            <span class="status-badge">全链路在线</span>
+          </div>
+
+          <div class="server-node-list">
+            <div class="node-item">
+              <div class="node-info">
+                <span class="node-flag">🇭🇰</span>
+                <div>
+                  <strong>香港 01 | 极速低延迟</strong>
+                  <div style="font-size: 0.76rem; color: #94a3b8;">BGP 优化路由 · 适合日常交互</div>
+                </div>
+              </div>
+              <span class="node-ping">28 ms</span>
+            </div>
+
+            <div class="node-item">
+              <div class="node-info">
+                <span class="node-flag">🇯🇵</span>
+                <div>
+                  <strong>日本 01 | 高清流媒体</strong>
+                  <div style="font-size: 0.76rem; color: #94a3b8;">多线负载均衡 · 4K 缓冲优化</div>
+                </div>
+              </div>
+              <span class="node-ping">56 ms</span>
+            </div>
+
+            <div class="node-item">
+              <div class="node-info">
+                <span class="node-flag">🇸🇬</span>
+                <div>
+                  <strong>新加坡 01 | 国际枢纽</strong>
+                  <div style="font-size: 0.76rem; color: #94a3b8;">低丢包调度 · 适合学术与开发</div>
+                </div>
+              </div>
+              <span class="node-ping">64 ms</span>
+            </div>
+
+            <div class="node-item">
+              <div class="node-info">
+                <span class="node-flag">🇺🇸</span>
+                <div>
+                  <strong>美国 01 | 充沛带宽</strong>
+                  <div style="font-size: 0.76rem; color: #94a3b8;">原生 IP · 适合 AI 模型与大下载</div>
+                </div>
+              </div>
+              <span class="node-ping">152 ms</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 20px; text-align: center;">
+            <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-sm btn-block" target="_blank" rel="sponsored nofollow noopener">进入控制台获取完整订阅列表</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">核心价值</span>
+          <h2 class="section-title">为什么选择瞬云作为您的跨境连接服务？</h2>
+          <p class="section-desc">从底层网络线路优化到用户端一键导入，兼顾低延迟、充沛流量与新手友好体验。</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <h3 class="feature-title">多区域优化节点</h3>
+            <p class="feature-text">覆盖香港、日本、新加坡、美国等热门地区，根据网络负载动态优化路由，保障日常连接流畅度。</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v12H4z M2 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H2zm10 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+            </div>
+            <h3 class="feature-title">全平台客户端兼容</h3>
+            <p class="feature-text">全面支持通用 Clash、Clash Verge Rev、ClashParty、Shadowrocket 等主流工具，支持一键导入与订阅托管。</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z"/></svg>
+            </div>
+            <h3 class="feature-title">主流 AI 与流媒体支持</h3>
+            <p class="feature-text">针对日常学术查阅、全球媒体资讯及主流生产力工具提供稳定解析支持，告别频繁断连打扰。</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            </div>
+            <h3 class="feature-title">透明价格与低试错门槛</h3>
+            <p class="feature-text">公开透明的阶梯套餐体系，从 ¥20/月 灵活月付到 ¥99 超值年付小包，按需选择，拒绝虚假绑架。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 套餐价格专区 (Top Priority) -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="background: rgba(99, 102, 241, 0.2); color: #a5b4fc;">公开资费表</span>
+          <h2 class="section-title">瞬云套餐价格表（公开资料参考）</h2>
+          <p class="section-desc">
+            以下四档套餐资料来自第三方公开参考。价格清晰、计费周期分明。所有套餐均提供专属购买注册通道与 Clash 订阅支持。
+          </p>
+          <div class="pricing-source-badge">
+            ℹ️ 公开资料参考价 · 以购买后台（用户中心）实时发布为准
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- 套餐 1：限时年付小包 -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">限时年付小包</h3>
+              <p class="plan-desc">轻度资料查询、学术科研检索与低频出海用户</p>
+            </div>
+            <div class="plan-price-box">
+              <div class="plan-price-main"><span class="currency">¥</span>99<span class="cycle">/年</span></div>
+              <div class="plan-cycle-note">一次支付 ¥99，每月 59GB</div>
+            </div>
+            <ul class="plan-features">
+              <li class="plan-feature-item highlight-text">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>每月 59GB 稳定流量额度</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>付款周期：年付（一次结清）</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>全平台 Clash / 客户端订阅</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>支持日常主流 AI 与学术工具</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>高性价比，省去频繁月结繁琐</span>
+              </li>
+            </ul>
+            <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-outline btn-block" target="_blank" rel="sponsored nofollow noopener">立即订购年付小包</a>
+          </div>
+
+          <!-- 套餐 2：行者（新手入门推荐） -->
+          <div class="pricing-card featured">
+            <div class="pricing-badge">新手入门推荐</div>
+            <div class="pricing-card-header">
+              <h3 class="plan-name">行者</h3>
+              <p class="plan-desc">首次使用机场的新手、日常网页与常规流媒体</p>
+            </div>
+            <div class="plan-price-box">
+              <div class="plan-price-main"><span class="currency">¥</span>20<span class="cycle">/月</span></div>
+              <div class="plan-cycle-note">灵活月付 · 试水首选</div>
+            </div>
+            <ul class="plan-features">
+              <li class="plan-feature-item highlight-text">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>每月 150GB 充裕流量额度</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>付款周期：月付（按月续订）</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Clash / ClashParty 一键导入</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>支持日常 1080P 流媒体与 AI 平台</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>低试错成本，体验真实稳定性</span>
+              </li>
+            </ul>
+            <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-block" target="_blank" rel="sponsored nofollow noopener">立即订购行者套餐</a>
+          </div>
+
+          <!-- 套餐 3：纵横 -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">纵横</h3>
+              <p class="plan-desc">高频远程办公、4K 视频重度用户与外贸跨境团队</p>
+            </div>
+            <div class="plan-price-box">
+              <div class="plan-price-main"><span class="currency">¥</span>36<span class="cycle">/月</span></div>
+              <div class="plan-cycle-note">进阶高频 · 300GB 充足容量</div>
+            </div>
+            <ul class="plan-features">
+              <li class="plan-feature-item highlight-text">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>每月 300GB 大容量高速流量</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>付款周期：月付（按月续订）</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>优质带宽保障，晚高峰体验佳</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>全面支持 4K 超清影音与算力交互</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>多设备协同支持，办公娱乐两不误</span>
+              </li>
+            </ul>
+            <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-outline btn-block" target="_blank" rel="sponsored nofollow noopener">立即订购纵横套餐</a>
+          </div>
+
+          <!-- 套餐 4：凌霄 -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">凌霄</h3>
+              <p class="plan-desc">极客团队、多终端协同与重度文件下载场景</p>
+            </div>
+            <div class="plan-price-box">
+              <div class="plan-price-main"><span class="currency">¥</span>68<span class="cycle">/月</span></div>
+              <div class="plan-cycle-note">海量极客 · 600GB 豪华池</div>
+            </div>
+            <ul class="plan-features">
+              <li class="plan-feature-item highlight-text">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>每月 600GB 充沛顶级流量池</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>付款周期：月付（按月续订）</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>高优先级带宽分配与并发支持</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>覆盖全球热门流媒体与海外算力平台</span>
+              </li>
+              <li class="plan-feature-item">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>适合团队开发、开源构建与大文件交互</span>
+              </li>
+            </ul>
+            <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-outline btn-block" target="_blank" rel="sponsored nofollow noopener">立即订购凌霄套餐</a>
+          </div>
+
+        </div>
+
+        <!-- 价格来源真实声明 -->
+        <div class="pricing-notice-box">
+          <strong>⚠️ 价格声明与购买须知：</strong>
+          以上套餐名称、标价与周期均整理自第三方公开资料。由于网络服务商可能会根据机房上游成本与网络策略进行阶段性产品调整，最终的套餐列表、实际折算汇率、可用节点及服务条款请务必以指定注册购买后台（<a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored nofollow noopener" style="color: #38bdf8; text-decoration: underline;">用户中心</a>）实时发布为准。本站不代收任何款项，所有交易流程均由服务提供商官方系统处理。
+        </div>
+
+        <div class="pricing-bottom-actions">
+          <a href="/plans.html" class="btn btn-primary">查看完整套餐参数对比表 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 套餐快速对比表 -->
+    <section class="comparison-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">横向对比</span>
+          <h2 class="section-title">瞬云套餐核心指标横向对照</h2>
+          <p class="section-desc">直观对比每个套餐的资费构成、折合参考单价与推荐使用人群。</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table-plans">
+            <thead>
+              <tr>
+                <th>套餐名称</th>
+                <th>官方标价</th>
+                <th>付款周期</th>
+                <th>每月流量</th>
+                <th>折合单价参考</th>
+                <th>客户端兼容</th>
+                <th>推荐适用人群</th>
+                <th>操作入口</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="plan-col-name">限时年付小包</td>
+                <td class="plan-col-price">¥99 / 年</td>
+                <td>年付（一次付清）</td>
+                <td>59 GB / 月</td>
+                <td>约 ¥8.25/月 (年付总计 ¥99)</td>
+                <td>Clash / 全平台标准订阅</td>
+                <td>轻度学术查阅、资料检索、低频出海</td>
+                <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-sm" target="_blank" rel="sponsored nofollow noopener">购买年付小包</a></td>
+              </tr>
+              <tr>
+                <td class="plan-col-name">行者（新手入门推荐）</td>
+                <td class="plan-col-price">¥20 / 月</td>
+                <td>月付（按月续订）</td>
+                <td>150 GB / 月</td>
+                <td>¥20 / 月</td>
+                <td>Clash / 全平台标准订阅</td>
+                <td>首次使用机场的新手、日常网页与常规流媒体</td>
+                <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-sm" target="_blank" rel="sponsored nofollow noopener">购买行者套餐</a></td>
+              </tr>
+              <tr>
+                <td class="plan-col-name">纵横</td>
+                <td class="plan-col-price">¥36 / 月</td>
+                <td>月付（按月续订）</td>
+                <td>300 GB / 月</td>
+                <td>¥36 / 月</td>
+                <td>Clash / 全平台标准订阅</td>
+                <td>高频远程办公、外贸跨境、4K 视频重度用户</td>
+                <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-sm" target="_blank" rel="sponsored nofollow noopener">购买纵横套餐</a></td>
+              </tr>
+              <tr>
+                <td class="plan-col-name">凌霄</td>
+                <td class="plan-col-price">¥68 / 月</td>
+                <td>月付（按月续订）</td>
+                <td>600 GB / 月</td>
+                <td>¥68 / 月</td>
+                <td>Clash / 全平台标准订阅</td>
+                <td>极客开发者、多设备团队、海量下载</td>
+                <td><a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" class="btn btn-primary btn-sm" target="_blank" rel="sponsored nofollow noopener">购买凌霄套餐</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 新手快速上手 4 步指导 -->
+    <section class="steps-section" id="tutorials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">新手教学</span>
+          <h2 class="section-title">从零开始：4 步快速开启瞬云网络连接</h2>
+          <p class="section-desc">清晰明了的上手流程，即使没有技术背景也能在 3 分钟内完成全套配置。</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-title">注册账号并订购套餐</h3>
+            <p class="step-desc">
+              访问瞬云用户中心，使用邮箱完成账号注册，在控制台选择适合您日常流量需求的套餐完成下单。
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-title">下载适配的客户端</h3>
+            <p class="step-desc">
+              根据您的操作系统（Windows / macOS / Android / iOS），选择 Clash Verge Rev、ClashParty 或小火箭等推荐工具。
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-title">复制并导入订阅链接</h3>
+            <p class="step-desc">
+              在瞬云仪表盘中点击“复制 Clash 订阅”，在客户端的“配置 / 订阅”页面粘贴并点击下载，自动拉取节点。
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3 class="step-title">开启代理并连通测试</h3>
+            <p class="step-desc">
+              选择延迟适宜的香港或日本节点，将代理模式切换为“规则模式（Rule）”，打开“系统代理”即可顺畅上网。
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="/articles/clash-node-tutorial.html" class="btn btn-primary">查看 Clash 详细图文配置教程 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 篇精选独立文章列表区 -->
+    <section class="articles-section" id="articles">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">知识库与深度科普</span>
+          <h2 class="section-title">精选网络选购指南与技术教程</h2>
+          <p class="section-desc">
+            每篇文章围绕独立搜索意图编写，提供客观中立的技术解析与实践指南。
+          </p>
+        </div>
+
+        <div class="articles-grid">
+          <!-- 文章 1 -->
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">选购避坑</span>
+              <span class="article-read-time">5 分钟阅读</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="/articles/how-to-choose-cheap-airport.html">便宜机场怎么选？新手购买套餐前需要了解的 7 个重点</a>
+            </h3>
+            <p class="article-card-summary">
+              从套餐实际计费周期、月度流量测算、月付试水建议、通用协议兼容性到退款条款，系统梳理低价套餐选购防坑法则。
+            </p>
+            <a href="/articles/how-to-choose-cheap-airport.html" class="article-read-more">阅读全文 →</a>
+          </article>
+
+          <!-- 文章 2 -->
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">隐私安全</span>
+              <span class="article-read-time">5 分钟阅读</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="/articles/safe-airport-privacy-risks.html">安全机场是什么意思？如何判断网络代理服务的隐私风险</a>
+            </h3>
+            <p class="article-card-summary">
+              深入剖析代理链路的数据可见范围、日志政策的工程现实、订阅密钥安全管控与无法保证 100% 绝对安全的技术真相。
+            </p>
+            <a href="/articles/safe-airport-privacy-risks.html" class="article-read-more">阅读全文 →</a>
+          </article>
+
+          <!-- 文章 3 -->
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">实操教程</span>
+              <span class="article-read-time">5 分钟阅读</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="/articles/clash-node-tutorial.html">Clash 节点使用教程：新手从订阅导入到连接测试</a>
+            </h3>
+            <p class="article-card-summary">
+              专为零基础用户打造的 Clash 配置指南。覆盖主流客户端选型、订阅链接导入、规则分流模式切换与常见排错技巧。
+            </p>
+            <a href="/articles/clash-node-tutorial.html" class="article-read-more">阅读全文 →</a>
+          </article>
+
+          <!-- 文章 4 -->
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">客户端指南</span>
+              <span class="article-read-time">5 分钟阅读</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="/articles/clashparty-subscription-guide.html">ClashParty 机场订阅教程：安装、导入与基础设置</a>
+            </h3>
+            <p class="article-card-summary">
+              探索新生代客户端 ClashParty 的现代界面、策略组配置、安全安装包获取渠道与常见解析报错应对策略。
+            </p>
+            <a href="/articles/clashparty-subscription-guide.html" class="article-read-more">阅读全文 →</a>
+          </article>
+
+          <!-- 文章 5 -->
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">线路解析</span>
+              <span class="article-read-time">5 分钟阅读</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="/articles/stable-nodes-selection-guide.html">稳定节点如何选择？延迟、速度和线路质量完整指南</a>
+            </h3>
+            <p class="article-card-summary">
+              打破单纯看峰值测速的迷信，从 RTT 时延、丢包率、骨干中转专线原理到晚高峰压力测试，教你科学挑选真正稳定的节点。
+            </p>
+            <a href="/articles/stable-nodes-selection-guide.html" class="article-read-more">阅读全文 →</a>
+          </article>
+
+          <!-- 文章 6 -->
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">协议分流</span>
+              <span class="article-read-time">5 分钟阅读</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="/articles/proxy-modes-comparison.html">科学上网新手指南：代理模式、全局模式和规则模式有什么区别？</a>
+            </h3>
+            <p class="article-card-summary">
+              彻底理清规则模式、全局模式与直连模式的核心区别，避免国内应用变卡与流量无故流失，保持畅通与合规使用。
+            </p>
+            <a href="/articles/proxy-modes-comparison.html" class="article-read-more">阅读全文 →</a>
+          </article>
+
+          <!-- 文章 7 -->
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">综合答疑</span>
+              <span class="article-read-time">5 分钟阅读</span>
+            </div>
+            <h3 class="article-card-title">
+              <a href="/articles/cross-border-network-faq.html">跨境网络连接常见问题：节点地区、设备兼容性与套餐选择</a>
+            </h3>
+            <p class="article-card-summary">
+              全面解答香港/日本/美国节点地区差异、多终端跨平台协同技巧、真实业务场景流量消耗模型及瞬云套餐匹配建议。
+            </p>
+            <a href="/articles/cross-border-network-faq.html" class="article-read-more">阅读全文 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ 常见问题解答 (8 个完整问题) -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">常见解答</span>
+          <h2 class="section-title">瞬云常见疑问与解答 (FAQ)</h2>
+          <p class="section-desc">针对新手在选购、配置与日常使用中最常遇到的 8 个实际问题提供专业客观答复。</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span class="faq-q-badge">1</span>
+              <span>瞬云提供哪些套餐？</span>
+            </h3>
+            <p class="faq-answer">
+              根据第三方公开参考资料，瞬云主要提供四档阶梯套餐：<strong>限时年付小包</strong>（¥99/年，每月提供 59GB 流量）、<strong>行者</strong>（¥20/月，每月 150GB 流量）、<strong>纵横</strong>（¥36/月，每月 300GB 流量）以及面向重度用户的<strong>凌霄</strong>（¥68/月，每月 600GB 流量）。由于服务商可能调整策略，具体资费与节点以指定购买后台展示为准。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span class="faq-q-badge">2</span>
+              <span>新手应该怎样选择流量？</span>
+            </h3>
+            <p class="faq-answer">
+              评估流量主要看使用场景：若仅用于日常文字查阅、文献检索与轻度出海交流，每月 59GB 的年付小包便已充沛；若需要经常观看 YouTube 1080P 高清视频或社交媒体，建议选择每月 150GB 的行者套餐；若有高频 4K 影音、远程大文件下载或多设备共享需求，建议选择 300GB 的纵横或 600GB 的凌霄套餐。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span class="faq-q-badge">3</span>
+              <span>如何判断客户端是否兼容？</span>
+            </h3>
+            <p class="faq-answer">
+              瞬云提供标准的通用订阅链接。只要您所使用的客户端支持标准的 Clash 格式或通用代理协议即可兼容。常见适用的客户端包括：Windows/macOS 上的 Clash Verge Rev、ClashParty、Clash Nyanpasu；Android 上的 Clash Meta for Android；iOS 上的 Shadowrocket（小火箭）或 Stash。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span class="faq-q-badge">4</span>
+              <span>Clash 订阅如何导入？</span>
+            </h3>
+            <p class="faq-answer">
+              操作非常简单：登录瞬云控制台，在“仪表盘”或“订阅中心”复制专属的 Clash 订阅链接。随后打开客户端，进入“配置（Profiles）”面板，在 URL 地址栏粘贴该链接并点击下载保存。拉取节点成功后，将其选为活动配置并开启“系统代理”即可。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span class="faq-q-badge">5</span>
+              <span>节点无法连接怎么办？</span>
+            </h3>
+            <p class="faq-answer">
+              遇到连不上时请按顺序检查：1. 确认设备系统时间是否自动同步，时间误差过大会导致 TLS 握手失败；2. 检查套餐流量是否用尽或周期到期；3. 在客户端中右键点击配置执行“强制更新订阅”；4. 检查是否开启了其他代理软件造成端口冲突；5. 尝试将节点切换为日本或新加坡备用节点。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span class="faq-q-badge">6</span>
+              <span>购买前需要注意哪些事项？</span>
+            </h3>
+            <p class="faq-answer">
+              购买前请务必确认付款周期（月付还是年付）以及月度可用额度，避免将年付总额误当成月付单价。网络服务质量与本地宽带运营商及地理位置相关，新手初次使用建议优先考虑月付（如行者套餐 ¥20/月）进行试水，检验满意后再行决定是否续费。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span class="faq-q-badge">7</span>
+              <span>月付与年付有什么区别？</span>
+            </h3>
+            <p class="faq-answer">
+              月付按自然月续费结算，试错成本低、灵活自主，适合新手与需求多变的用户；年付是一次性支付全年的服务费用，通常能获得更优惠的整体资费。例如限时年付小包一次性支付 ¥99，全年在每个月份均提供 59GB 的额度，折算后性价比较高，但不可拆分退款。
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span class="faq-q-badge">8</span>
+              <span>如何查看最新套餐信息？</span>
+            </h3>
+            <p class="faq-answer">
+              网络服务商会根据国际机房出口带宽变动和节假日运营策略进行阶段性调整。若需获取当下最新发布的实时资费、可用节点列表及维护通知，请直接点击网站的“注册 / 登录”按钮，进入指定服务商后台控制台查阅官方实时数据。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 用户选购关注点与反馈征集区 -->
+    <section class="feedback-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">真实交流</span>
+          <h2 class="section-title">用户选购核心关注点与反馈征集</h2>
+          <p class="section-desc">
+            我们坚持不编造虚假的好评与虚构的用户数量。以下汇总了广大用户在挑选服务时最核心的考量要素。
+          </p>
+        </div>
+
+        <div class="concerns-grid">
+          <div class="concern-card">
+            <div class="concern-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+              <span>晚高峰稳定性</span>
+            </div>
+            <p class="concern-text">晚 8 点到 11 点骨干网拥挤时，节点是否依然具备低丢包率与秒开高清视频的能力。</p>
+          </div>
+
+          <div class="concern-card">
+            <div class="concern-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zm1 6a1 1 0 00-1 1v2a1 1 0 001 1h12a1 1 0 001-1v-2a1 1 0 00-1-1H4z" clip-rule="evenodd"/></svg>
+              <span>客户端兼容与上手</span>
+            </div>
+            <p class="concern-text">是否原生支持通用 Clash 订阅，手机与电脑之间能否无障碍一键拉取并自动更新。</p>
+          </div>
+
+          <div class="concern-card">
+            <div class="concern-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/></svg>
+              <span>价格透明与灵活度</span>
+            </div>
+            <p class="concern-text">拒绝隐形捆绑与虚标，提供低门槛月付供新手试水，让每一分预算都花在实处。</p>
+          </div>
+
+          <div class="concern-card">
+            <div class="concern-title">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.192-1.229c0-.469-.08-.918-.231-1.336l1.65-1.65A7.95 7.95 0 0116 10z" clip-rule="evenodd"/></svg>
+              <span>节点维护响应</span>
+            </div>
+            <p class="concern-text">突发故障或网络路由波动时，服务商是否具备备用冗余线路及及时的状态公告。</p>
+          </div>
+        </div>
+
+        <div class="feedback-cta-box">
+          <h3>💬 体验反馈与使用咨询</h3>
+          <p>
+            如果您在阅读本站教程或使用瞬云的过程中有任何疑问、线路测速建议或客户端配置故障，欢迎前往服务商后台提交技术工单，或查阅本站的延伸实战教程。
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="/" class="brand-logo" aria-label="瞬云首页">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM13 14h-2V9h2v5zm0 4h-2v-2h2v2z"/></svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">瞬云</span>
+              <span class="brand-sub">SunYun Cloud</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">瞬云致力于为广大网络用户提供透明的套餐资料参考、全平台客户端配置指南及客观中立的技术科普。</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">快捷导航</h4>
+          <div class="footer-links">
+            <a href="/">网站首页</a>
+            <a href="/plans.html">套餐详细对比</a>
+            <a href="#tutorials">客户端配置教程</a>
+            <a href="#faq">常见使用疑问</a>
+            <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="sponsored nofollow noopener">立即注册账号</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">技术指南</h4>
+          <div class="footer-links">
+            <a href="/articles/clash-node-tutorial.html">Clash 节点导入指南</a>
+            <a href="/articles/clashparty-subscription-guide.html">ClashParty 客户端设置</a>
+            <a href="/articles/proxy-modes-comparison.html">代理与规则模式对比</a>
+            <a href="/articles/stable-nodes-selection-guide.html">稳定节点与线路选择</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-disclaimer-text">免责声明：本站仅为第三方公开信息整理与技术交流分享站点，非服务运营直营机构。请合理合法使用网络服务并遵守所在地区法律法规。</p>
+        <p>© 2026 瞬云 (SunYun Cloud). 保留所有权利。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
