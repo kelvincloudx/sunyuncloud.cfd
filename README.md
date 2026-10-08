@@ -2,7 +2,7 @@
 
 瞬云 (SunYun Cloud) 高速稳定跨境网络连接服务指南、套餐价格对比与 Clash/ClashParty 客户端配置教程平台。
 
-- 🌐 官方域名：https://sunyuncloud.shop
+- 🌐 官方域名：https://sunyuncloud.cfd
 - ⚡ 注册入口：https://varnexa.lingdongaff.com/#/?code=HHoxxHGa
 
 ## 项目特性
