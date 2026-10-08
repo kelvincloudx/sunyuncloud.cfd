@@ -39,8 +39,8 @@ function fail(testName, msg) {
 // 1. 检查 robots.txt
 if (fs.existsSync('robots.txt')) {
   const robots = fs.readFileSync('robots.txt', 'utf8');
-  if (robots.includes('Sitemap: https://sunyuncloud.cfd/sitemap.xml')) {
-    pass('Robots.txt', '正确引用了 https://sunyuncloud.cfd/sitemap.xml');
+  if (robots.includes('Sitemap: https://sunyuncloud.shop/sitemap.xml')) {
+    pass('Robots.txt', '正确引用了 https://sunyuncloud.shop/sitemap.xml');
   } else {
     fail('Robots.txt', '未找到正确的 Sitemap 引用');
   }
@@ -53,9 +53,9 @@ if (fs.existsSync('sitemap.xml')) {
   const sitemap = fs.readFileSync('sitemap.xml', 'utf8');
   let missingUrls = [];
   const expectedUrls = [
-    'https://sunyuncloud.cfd/',
-    'https://sunyuncloud.cfd/plans.html',
-    ...REQUIRED_ARTICLES.map(a => `https://sunyuncloud.cfd/articles/${a}`)
+    'https://sunyuncloud.shop/',
+    'https://sunyuncloud.shop/plans.html',
+    ...REQUIRED_ARTICLES.map(a => `https://sunyuncloud.shop/articles/${a}`)
   ];
   expectedUrls.forEach(url => {
     if (!sitemap.includes(url)) missingUrls.push(url);
@@ -108,7 +108,7 @@ htmlFiles.forEach(file => {
   }
 
   // Canonical 标签
-  const canonicalMatch = content.match(/<link\s+rel=["']canonical["']\s+href=["'](https:\/\/sunyuncloud\.cfd\/.*?)["']/i);
+  const canonicalMatch = content.match(/<link\s+rel=["']canonical["']\s+href=["'](https:\/\/sunyuncloud\.shop\/.*?)["']/i);
   if (canonicalMatch) {
     pass(`${file} Canonical`, canonicalMatch[1]);
   } else {
